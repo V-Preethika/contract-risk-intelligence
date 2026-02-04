@@ -302,7 +302,14 @@ http://localhost:8501
 
 
 
-(Add screenshots here for UI, risk analysis, and multilingual output)
+<img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/e2c3a1fe-813a-41b5-a8aa-3e2a4b7f1279" />
+<img width="1918" height="923" alt="image" src="https://github.com/user-attachments/assets/271c8cbf-fc51-4f30-8bff-a4f8adfa224a" />
+<img width="1910" height="897" alt="image" src="https://github.com/user-attachments/assets/0facd162-7e9a-4253-98a9-32ae2044ea4c" />
+<img width="1902" height="857" alt="image" src="https://github.com/user-attachments/assets/5cb730be-1801-4d22-b075-7b2550616616" />
+
+
+
+
 
 
 

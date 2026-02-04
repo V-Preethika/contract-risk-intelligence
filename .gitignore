@@ -1,0 +1,7 @@
+__pycache__/
+.env
+*.log
+*.pdf
+*.docx
+*.txt
+data/audit_logs.json

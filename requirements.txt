@@ -1,5 +1,6 @@
 streamlit
-python-docx
+python-docx==0.8.11
 PyPDF2
 langdetect
-googletrans==4.0.0-rc1
+deep-translator
+

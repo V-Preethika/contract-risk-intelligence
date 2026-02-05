@@ -1,5 +1,5 @@
 from langdetect import detect
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
 # Initialize translator once
 translator = Translator()
@@ -35,7 +35,9 @@ def normalize_to_english(text, llm=None):
 
 
 # -------------------- OUTPUT TRANSLATION --------------------
-def translate_output(text, target_language, llm=None):
+def translate_output(text, target_lang="en"):
+    return GoogleTranslator(source="auto", target=target_lang).translate(text)
+
     """
     Translates analysis output (summary, explanations, clauses)
     into the user-selected language.

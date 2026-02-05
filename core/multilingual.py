@@ -40,10 +40,27 @@ def translate_output(text, target_lang="en"):
     """
     Translates analysis output into the user-selected language.
     """
-    if not text or target_lang == "en":
+
+    if not text:
+        return text
+
+    language_map = {
+        "english": "en",
+        "hindi": "hi",
+        
+    }
+
+    lang_key = target_lang.lower()
+
+    # English → no translation
+    if lang_key in ["english", "en"]:
+        return text
+
+    lang_code = language_map.get(lang_key)
+    if not lang_code:
         return text
 
     try:
-        return GoogleTranslator(source="auto", target=target_lang).translate(text)
+        return GoogleTranslator(source="auto", target=lang_code).translate(text)
     except Exception:
         return text

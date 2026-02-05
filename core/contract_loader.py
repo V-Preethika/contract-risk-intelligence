@@ -1,12 +1,16 @@
-import docx
+
 import PyPDF2
+from docx import Document
+
 
 def extract_text(uploaded_file):
     if uploaded_file.name.endswith(".txt"):
         return uploaded_file.read().decode("utf-8", errors="ignore")
 
     if uploaded_file.name.endswith(".docx"):
-        doc = docx.Document(uploaded_file)
+        ##doc = docx.Document(uploaded_file)
+        doc = Document(file)
+
         return "\n".join(p.text for p in doc.paragraphs)
 
     if uploaded_file.name.endswith(".pdf"):
